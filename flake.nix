@@ -44,6 +44,7 @@
         devShells.default = craneLib.devShell {
           checks = self.checks.${system};
           packages = [
+            pkgs.cargo-edit
             pkgs.rust-analyzer
             pkgs.zbus-xmlgen
           ];
